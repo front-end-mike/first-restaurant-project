@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Quattrocento', serif;
+}
+
+body{
+    margin: 0;
+    
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.96);
+    padding: 1,5rem;
+    flex-wrap: wrap;
+    position:sticky;
+    top: 0;
+
+   
+    
+
+}
+
+nav a{
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.621);
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+
+}
+
+nav a:hover{
+    background-color: rgb(255, 255, 255);
+
+}
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: rgba(0, 0, 0, 0.604);
+    padding: 10px;
+    
+    
+
+    
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    background-color:antiquewhite ;
+    padding: 50px;
+    justify-content: center;
+    
+    
+}
+
+
+
+
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+aside{
+    flex: 30%;
+    padding: 20px;
+    
+    }
+
+main{
+    flex:70%;
+    padding: 20px 50px;
+    border-left: solid 10px antiquewhite;
+    
+}
+
+aside, main{
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+}
+
+.poster{
+    width: 100%;
+    height: 300px;
+    background-image:url("https://cdn.pixabay.com/photo/2017/08/02/21/09/interior-2573445__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    
+    
+}
+
+
+
+footer ul{
+    background-color:rgb(255, 255, 255);
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-size: 20px;
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+footer ul li:hover{
+    text-decoration: underline;
+    font: 1em sans-serif;
+}
+
+
+@media screen and (max-width: 700px) {
+    .content {   
+      flex-direction: column;
+     
+    }
+
+    aside{
+        margin-bottom: 20px;
+    }
+    main{
+      background-color:blanchedalmond;
+      border: solid 3px rgb(255, 255, 255);
+      
+      
+    }
+  }
